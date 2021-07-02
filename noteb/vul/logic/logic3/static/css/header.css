@@ -1,0 +1,35 @@
+﻿#topNav .notIcon{background:none;width:auto;}
+#topNav .notIcon:before{content: '消息';}
+.person{margin-top:22px;height:38px;display:inline-block;}
+.answerq #message{margin-top:18px!important;}
+.answerq #presonLst,.navspace #presonLst{width:320px;background:#fff!important;}
+.navspace #presonLst:after{content:'';width:10px;height:10px;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);-o-transform:rotate(45deg);transform:rotate(45deg);position:absolute;background:#fff;top:-4px;right:34px;box-shadow:-1px -1px #eaeaea;}
+.menuper{overflow:hidden;padding:10px 16px;}
+.permin{overflow:hidden;padding:0 10px 5px;}
+.permin a{display:inline-block!important;width:132px;margin:5px 6px;text-align:center;border:1px solid #d3d3d3;color:#414551!important;}
+/*.answerq .permin a{width:93px;}*/
+.permin a:hover{border:1px solid #35c25e;color:#35c25e!important;background:#fff!important;}
+.menuper .menulft{width:40px;height:40px;float:left;margin-right:10px;}
+.menuper .menulft a{padding:1px!important;margin:0;display:block;border-radius:30px;border:1px solid #35c25e;}
+.menuper .menulft a img{height:36px!important;border-radius:30px!important;}
+.menuper .menurgt{width:200px;height:40px;float:left;}
+.menuper .menurgt .per1{color:#4a4a4a;padding-left:4px;font-size:14px;}
+.menuper .menurgt .per2{color:#898b92;font-size:12px;}
+.menuper .menurgt .per2 a{display:inline-block!important;width:auto;padding:0 4px!important;font-size:12px;color:#898b92;}
+.menuper .menurgt .per2 a:hover{background:#fff!important;}
+#topNav.navspace .hidden_btn:hover a.mk{background:none!important;}
+#topNav.navspace{background:#fff!important;color:#2a3e4a!important;}
+#topNav.navspace #tongji-top-msg{color:#35c25e!important;}
+#topNav.navspace #tongji-top-msg:hover{color:#35c25e!important;}
+#topNav.navspace .lftHead{line-height:60px;}
+#topNav.navspace .newLog{width:68px!important;margin:0 10px 0 0!important;}
+#topNav.navspace .newLog a{color:#2a3e4a!important;line-height:60px;}
+#topNav.navspace .newLog a#tongji-top-logo{font-size:16px;width:68px!important;}
+#topNav.navspace .newLog{font-size:16px;color:#2a3e4a!important;}
+#topNav.navspace .chsp{margin-left:12px;font-size:14px;}
+#topNav.navspace .permillogin,#topNav.answerq .permillogin{display:inline-block;width:132px;margin:5px 6px;text-align:center;}
+#topNav.navspace .permillogin a,#topNav.answerq .permillogin a{font-size:12px;display:inline-block!important;border-width:0 0 1px 0!important;border-style:solid;border-color:#414551;width:auto;padding:0 2px!important;}
+#topNav.navspace .permillogin a:hover,#topNav.answerq .permillogin a:hover{border-color:#35c25e;}
+.navspace .dropDiv{box-shadow:0 0 2px 1px #eaeaea;}
+#right .sortBar{margin:0 30px;}
+.noticeList{margin:0 40px 20px;}

@@ -1,0 +1,76 @@
+﻿﻿/*国外客服*/
+#wrapKF{width:500px;position:fixed;bottom:0;z-index:990; _position:absolute;right:50px;
+_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-
+(parseInt(this.currentStyle.marginTop, 10)||0)-(parseInt(this.currentStyle.marginBottom, 10)||0)));}
+
+
+#wrapKF .navKf{width:auto;cursor:pointer;height:68px;background-image:url(../images/kf_nav.png);background-repeat:no-repeat;}
+#wrapKF .btnToggle{width:auto;background-image:url(../images/kf_nav_long.png);background-repeat:no-repeat;}
+
+
+.accaKf .navKf{background-position:right 0px;}
+.accaKf .btnToggle{background-position:0px 0px;}
+
+.cmaKf .navKf{background-position:right -68px;}
+.cmaKf .btnToggle{background-position:0px -68px;}
+
+.cfaKf .navKf{background-position:right -136px;}
+.cfaKf .btnToggle{background-position:0px -136px;}
+
+.uscpaKf .navKf{background-position:right -204px;}
+.uscpaKf .btnToggle{background-position:0px -204px;}
+
+.frmKf .navKf{background-position:right -272px;}
+.frmKf .btnToggle{background-position:0px -272px;}
+
+
+
+
+#wrapKF .navKf .navCont{padding:36px 0 0 275px;line-height:28px;}
+#wrapKF .navKf .navCont em{margin-left:15px;color:#000;font-size:12px; }
+#wrapKF .navKf .navCont em.nameKf{font-size:22px;color:#2bab4a;}
+
+#wrapKF .btnToggle .navCont{padding:71px 0 0;text-align:center;*padding:37px 0 0 270px;position:relative;z-index:100;}
+
+
+
+#wrapKF .btnToggle  .navCont em{ display:block;*display:inline;}
+
+
+
+#kf-container{display:none;background:#fff;overflow:hidden;color:#515151;-webkit-transform:translate3d(0px, 0px, 0px)!important;border:solid 1px #30ad4e;border-top:none;padding-top:65px;*padding-top:20px;}
+#kf-container .contKf{padding:0 40px;background:#f3f3f3;margin-top:18px;}
+
+
+#kf-container .contKf h2{font-size:16px;color:#36373e;font-weight:400;line-height:32px;padding-top:9px;}
+#kf-container .twoKf{height:130px;}
+#kf-container .twoKf div{width:195px;font-size:13px;}
+#kf-container .twoKf div.lft{margin-left:10px;}
+#kf-container .twoKf div h4{font-size:14px;color:#2bab4a;text-align:left;font-weight:400;margin-top:5px;}
+#kf-container .twoKf div em{display:block;margin:5px 0;}
+
+
+#kf-container .btn_wrap_kf em{display:inline-block;width:130px;text-align:center;font-size:16px;cursor:pointer;color:#1085b1;}
+#kf-container .btn_wrap_kf a{width:110px;height:31px;display:inline-block;text-align:center;line-height:30px;font-size:14px;color:#fff;margin-left:10px;background:#2bab4a;border-radius:5px;}
+#kf-container .btn_wrap_kf a:hover{background:#199838;text-decoration:none;}
+.bei{z-index:991;}
+/*国外客服*/
+
+
+@media screen and (max-width:1000px){
+	
+}
+
+@media screen and (max-width:767px){
+	body #wrapKF{display:none!important;}
+}
+
+@media screen and (max-width:560px){
+	
+}
+
+
+
+
+
+

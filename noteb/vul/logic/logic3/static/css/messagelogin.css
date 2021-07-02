@@ -1,0 +1,265 @@
+﻿
+/*é¢„çº¦å¼¹å±‚æ ·å¼*/
+.orderCover{
+	width:100%;
+	height:100%;
+	background: rgba(0,0,0,.7);
+	position: fixed;
+	left:0;
+	top:0;
+	z-index:1000;
+	display: none;
+}
+.orderDiv{
+	width:358px;
+	height:310px;
+	background: #fff;
+	padding:34px 34px 0 34px;
+	border-radius:3px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+	display: none;
+  
+}
+.orderDiv.ab{
+	position: fixed;
+	left:50%;
+	top:50%;
+	margin-left:-179px;
+	margin-top:-165px;	
+    display: block;
+    z-index: 1000;
+}
+.orderDiv .close{
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+  	background: url('../images/close.png') center center no-repeat;
+}
+.orderForm{
+	margin-top:31px;
+}
+.formItem{
+	position:relative;
+	margin-bottom:30px;				
+}
+.formItem>.icon,.formItem>.errorIcon{
+	position:absolute;
+	width:30px;
+	height:30px;
+	left:0;
+	top:50%;
+	margin-top:-15px;
+	background: url('../images/phone.png') center center no-repeat;
+}	
+.getCode>.code{
+	display: block;
+	width:100%;
+	height:100%;
+}
+.getCode+.icon{
+	background: url('../images/code.png') center center no-repeat;
+}	
+.formInput+.errorIcon{
+	left: auto;
+	right:0;
+	background: url('../images/warn.png') center center no-repeat;
+	display: none;				
+}
+input[type="text"].formInput,input[type="tel"].formInput{
+	border:0;
+	background: none;
+	width: 100%;
+	height:40px;
+	line-height: normal;
+	color:#333;
+	font-size:14px;
+	border:1px solid #E5E5E5;
+	outline: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+	padding:0;
+	padding-left:30px;
+}
+input[type="text"].formInput.small,input[type="tel"].formInput.small{
+	width:55%;
+	display: block;
+}
+.getCode{
+	width:98px;
+	height:40px;
+	float: right;
+	background:#16B95E;
+	font-size:13px;
+	color:#fff;
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+	border-radius:3px;
+}
+.getCode.actived{
+	color:#16B95E;
+	border:1px solid #16B95E;
+	background: #fff;
+}
+.seconed{
+	display: none;
+	background: #d7d7d7;
+	cursor:default;
+}
+.btnWrap{
+	text-align: center;
+}
+.orderBtn,.orderOther{
+	border:0;
+	outline: none;
+	width:100%;
+	height:40px;
+	color:#fff;
+	letter-spacing: 5px;
+	font-size:14px;
+	background:#16B95E;
+	padding:0;
+	border-radius:3px;
+	cursor: pointer;
+}
+.orderError{
+	font-size:12px;
+	color:#FF615B;
+	position:absolute;
+	bottom:-20px;
+	left:0;
+	
+}
+.orderBtn.loading{
+	background: #70e5a4;
+}
+.orderBtn:active{
+	background: #07aa4f;
+}
+.errorItem>input[type="text"].formInput,.errorItem>input[type="tel"].formInput{
+	border-color:#FF615B;
+}
+.successItem>input[type="text"].formInput,.successItem>input[type="tel"].formInput{
+	border-color:#16B95E;
+}			
+.errorItem>.errorIcon{
+	display: block;
+}
+.errorItem>.orderError{
+	display: block;
+}
+.paramsError{
+	background: #ffecec url('../images/onerror.gif') no-repeat 3px scroll;
+    border: solid 1px #ffc7c7;
+    padding: 5px 0 5px 25px;
+    width:290px;
+    font-size: 12px;
+    color: #f00;
+    position:absolute;
+    left:34px;
+    top:30px;
+    display: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+@media screen and (max-width: 370px) {
+	.orderDiv.ab{
+		width:300px;
+	}
+	.paramsError{
+		width:232px;
+	}
+}
+@media screen and (max-width: 750px) {
+	.orderDiv.ab{
+		transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+		-moz-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
+		margin-left:0 ;
+	}
+}
+.login-status.orderP{
+	padding:0 34px;
+}
+.soft-icon.icon-go{
+	margin-right:0;
+}
+#orderOther{
+	color:#16B95F;
+	position:relative;
+	top:2px;
+	display: inline-block;
+}
+#orderOther:hover{
+	text-decoration: underline;
+    color: #16B95F;
+}
+/*åº•éƒ¨æ ·å¼*/
+.login-footer{
+	position:absolute;
+	width:100%;
+	height:64px;
+	background:#FCFCFC;
+	border-top:1px solid #EFEFEF;
+	left:0;
+	bottom:0
+}
+.login-status{
+	margin-top:19px;
+	padding:0 12px;
+}
+.soft-ware{
+	font-size:12px;
+	display: inline-block;
+	line-height: 16px;
+	color:#515151;
+	font-weight: normal;
+	vertical-align: middle;
+}
+.soft-ware.now{
+	font-size:14px;
+	color:#16B95F;
+	font-weight:bold;
+	line-height:19px;
+}
+.pull-right{
+	float:right
+}
+/*ç‰¹æ®Šå­—ä½“*/
+.soft-ware.style{
+	font-family: Arial,Verdana,"\5b8b\4f53";
+}
+.soft-icon{
+	width:18px;
+	height:18px;
+	display: inline-block;
+	vertical-align: middle;
+	margin:0 6px;
+}
+.icon-go{
+	background: url('../images/go.png');
+}
+
+.order-p{
+    height: 50px;
+    line-height: 50px;
+    color: #16B95F;
+    font-size: 16px;
+    cursor: pointer;
+}
+

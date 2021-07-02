@@ -1,0 +1,120 @@
+﻿/*
+.onShow
+{
+    background:url(../images/onshow.gif) no-repeat; 
+    padding-left:25px; 
+	font-size: 12px;
+	line-height:22px; 
+	vertical-align:middle;
+	border:solid 1px #ddd;
+	display:none;
+}
+.onShow,.onFocus,.onError,onCorrect{margin-top:3px;}
+.onFocus
+{
+    background:#E9F0FF url(../images/onfocus.gif) no-repeat; 
+    padding-left:25px; 
+	font-size: 12px;
+	line-height:22px; 
+	vertical-align:middle;
+	border:solid 1px #b9e3ff;
+}
+.onError
+{
+    background:#FFF2E9 url(../images/onerror.gif) no-repeat;
+    padding-left:25px;
+	font-size: 12px;
+	line-height:22px; 
+	vertical-align:middle;
+	border:solid 1px #ffc7c7
+}
+.onCorrect
+{
+    background:url(../images/oncorrect.gif) no-repeat 0 3px;
+    padding-left:25px;
+	font-size: 12px;
+	line-height:22px; 
+	vertical-align:middle;
+	width:25px;overflow:hidden;
+	height:27px;
+}
+*/
+.onShow
+{
+    background:url(../images/onshow.gif) no-repeat; 
+    padding-left:25px; 
+	font-size: 12px;
+	line-height:22px; 
+	vertical-align:middle;
+	display:none;
+}
+.onShow,.onFocus,.onError,onCorrect{margin-top:3px;}
+.onFocus
+{
+    background:url(../images/onfocus.gif) no-repeat; 
+    padding-left:25px; 
+	font-size: 12px;
+	line-height:22px; 
+	vertical-align:middle;
+
+}
+.onError
+{
+    background:url(../images/onerror.gif) no-repeat;
+    padding-left:25px;
+	font-size: 12px;
+	line-height:22px; 
+	vertical-align:middle;
+	color:#f00;
+
+}
+.onCorrect
+{
+    background:url(../images/oncorrect.gif) no-repeat 0 3px;
+    padding-left:25px;
+	font-size: 12px;
+	line-height:22px; 
+	vertical-align:middle;
+	width:25px;overflow:hidden;
+	height:25px;
+	text-indent:-300px;
+}
+.onLoad
+{
+    background:#E9FFEB url(../images/onload.gif) no-repeat 3px 3px;
+    padding-left:25px;
+	font-size: 12px;
+	line-height:22px; 
+	vertical-align:middle;
+} 
+/*提示*/
+.fv_tooltip{
+	width:200px; 
+	color:#000;
+	font:lighter 12px Arial,sans-serif;
+	text-decoration:none;
+	text-align:center
+}
+.fv_tooltip span.top{padding: 30px 8px 0; background: url(../images/bt.gif) no-repeat top}
+.fv_tooltip b.bottom{padding:3px 8px 8px;color: #548912; background: url(../images/bt.gif) no-repeat bottom}
+
+.formValidateTip
+{
+    position:absolute;
+    padding:10px;
+	background:transparent;
+}
+.fv_iframe
+{
+	position:absolute;
+	z-index:56001;
+	width:expression(this.nextSibling.offsetWidth);
+	height:expression(this.nextSibling.offsetHeight);
+	top:expression(this.nextSibling.offsetTop);
+	left:expression(this.nextSibling.offsetLeft);
+	filter:Alpha(Opacity=0);
+	opacity:0.7;
+	-khtml-opacity: 0.7;
+	-moz-opacity: 0.7;
+	display:none;
+}

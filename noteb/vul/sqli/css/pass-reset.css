@@ -1,0 +1,147 @@
+body{
+  background-color: #F4F5F6;
+  background-image: none!important;
+}
+#header .header-info{
+  background: #fff;
+  height: 95px;
+  border-bottom: 5px solid #17acf6;
+}
+#passReset {
+  width: 720px;
+  height: 350px;
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+  margin-top: 20px;
+  font-size: 16px;
+  background-color: #fff;
+}
+#passReset .passReset-title {
+  height: 40px;
+  background-color: #e5e5e5;
+  color: #333;
+  line-height: 40px;
+  font-size: 16px;
+}
+/*用户拥有的用户名显示*/
+#passReset .user-name{
+  color: #999999;
+  margin-top: 10px;
+}
+#passReset .user-name .user-name-item{
+  color: #17acf6;
+}
+#passReset .user-name span{
+  margin-right: 20px;
+}
+/*用户拥有的用户名显示结束*/
+/*正确提示*/
+#passReset .form-group .correct-tip{
+  position: absolute;
+  right: -97px;
+  top: 10px;
+  font-size: 12px;
+  color: red;
+  float: right;
+  width: 100px;
+  text-align: left;
+  display: none;
+}
+#passReset .form-group .correct-tip .iconfont{
+  color: #2ebd12;
+}
+/*正确提示结束*/
+#passReset .verify-phone{
+  margin-top: 10px;
+}
+#passReset .form-group .btn-reister{
+  background-color: #17acf6;
+  color: #fff;
+  font-size: 16px;
+}
+#passReset .verify .col-xs-5 {
+  width: 38%;
+  padding-right: 10px;
+  padding-left: 15px;
+}
+#passReset .btn-gray {
+  float: right;
+  margin-right: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#passReset .row .line{
+  height: 1px;
+  background-color: #e5e5e5;
+  margin-top: 15px;
+}
+#passReset .row .tip{
+  color: #666;
+  margin-top: 20px;
+}
+#passReset .contact{
+  margin-top: 20px;
+  color: #666;
+  line-height: 24px;
+}
+#passReset .contact-icon{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('../img/forum-sprites.png') no-repeat;
+  vertical-align: sub;
+}
+#passReset .qq-icon{
+  background-position: -81px -26px;
+  background-size: 250px;
+}
+#passReset .email-icon{
+  background-position: -110px -26px;
+  background-size: 250px;
+}
+
+/* 找回密码第二步 */
+#passReset .reset-pass{
+  display: block;
+  margin-top: 20px;
+}
+.reset-pass .user-name-btn{
+  color: #999;
+  width: 100%;
+  text-align: left;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.reset-pass .user-name-btn[disabled]{
+  opacity: 1;
+}
+#passReset .control-label {
+  font-weight: 400;
+}
+#passReset .form-horizontal .control-label {
+  text-align: right;
+}
+#passReset .form-group {
+  position: relative;
+}
+#passReset .form-group .verify {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#passReset .form-group .err-tip {
+  position: absolute;
+  right: -162px;
+  top: 10px;
+  font-size: 12px;
+  color: red;
+  float: right;
+  width: 170px;
+  text-align: left;
+  display: none;
+}
+@media (max-width: 768px){
+  #passReset {
+      width: 100%;
+  }
+}

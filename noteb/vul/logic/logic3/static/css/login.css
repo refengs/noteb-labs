@@ -1,0 +1,476 @@
+﻿*{
+	margin:0;
+	padding:0;
+	list-style: none;
+	font-family: "微软雅黑";
+	text-decoration: none;
+}
+a:link {
+    text-decoration: none;
+}
+.clearfix:after{
+	content:"";
+	height:0;
+	display: block;
+	clear:both;
+}
+.clearfix{
+	zoom:1
+}
+.login-cover{
+	position: fixed;
+	width:100%;
+	height:100%;
+	background:url(../images/gb.png) repeat;
+	z-index:9999;
+	display: none;
+	left:0;
+	top:0;
+}
+.login-wrap{
+	width:356px;
+	height:468px;
+	background:#FFFFFF;
+	position:absolute;
+	z-index:10000;
+}
+.login-wrap.center{
+	left:50%;
+	top:50%;
+	margin-top:-234px;
+	margin-left:-178px;
+	/*transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);*/
+}
+.login-wrap .main{
+	width:100%;
+	height:100%;
+    position:relative;
+    overflow: visible;
+}
+/*按钮样式*/
+.close-btn{
+    z-index: 3;
+	position:absolute;
+	width:36px;
+	height:36px;
+	border-radius:50%;
+	-webkit-border-radius:50%;
+	-ms-border-radius:50%;
+	-o-border-radius:50%;
+	-moz-border-radius:50%;
+	right:0;
+	top:-18px;
+	right:-18px;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.17);
+	-webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,.17);
+	-ms-box-shadow: 0 2px 4px 0 rgba(0,0,0,.17);
+	-moz-box-shadow: 0 2px 4px 0 rgba(0,0,0,.17);
+	-o-box-shadow: 0 2px 4px 0 rgba(0,0,0,.17);
+	background:#FFFFFF url(../images/close.png) center center no-repeat;	
+	cursor: pointer;	
+	transition:all .5s ease;
+	-moz-transition:all .5s ease;
+	-webkit-transition:all.5s ease;
+	-o-transition:all .5s ease;
+	-ms-transition:all .5s ease;	
+	transform:rotate(0deg);
+	-ms-transform:rotate(0deg);
+	-moz-transform:rotate(0deg);
+	-webkit-transform:rotate(0deg);
+	-o-transform:rotate(0deg);		
+}
+.close-btn:hover{
+	transform:rotate(360deg);
+	-ms-transform:rotate(360deg);
+	-moz-transform:rotate(360deg);
+	-webkit-transform:rotate(360deg);
+	-o-transform:rotate(360deg);
+}
+/*tab样式*/
+.login-tab{
+	padding:33px 0 24px 0;
+	border-bottom:1px solid #EFEFEF;
+	position:relative;
+	margin-bottom:26px;
+}
+.login-tab:before{
+	content:"";
+	position:absolute;
+	left:50%;
+	top:34px;
+	margin-left:-1px;
+	width:2px;
+	height:18px;
+	background: #EFEFEF;
+}
+.tab-item{
+	float:left;
+	width:50%;
+	text-align: center;
+}
+.tab-item>a{
+	color:#5D5D61;
+	font-weight: bold;
+	font-size:16px;
+	display: inline-block;
+	line-height:21px;
+}
+.tab-item.actived>a{
+	color:#16B95F;
+}
+.codeWrap{
+	width:196px;
+	height:179px;
+	margin:0 auto;
+	padding:7px 13px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;	
+	margin-bottom:23px;
+}
+.img-wrap{
+	width: 100%;
+	height:100%;
+	position:relative;
+	left:0;
+	overflow: hidden;
+	transition:all .5s ease;
+	-moz-transition:all .5s ease;
+	-webkit-transition:all.5s ease;
+	-o-transition:all .5s ease;
+	-ms-transition:all .5s ease;	
+}
+.img-wrap>iframe{
+	width: 170px;
+}
+
+.img-wrap>img{
+	display: block;
+	width:100%;
+	height:100%;
+	border-color:transparent;
+	background:url(../images/loading.gif) center center no-repeat;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+.img-cover{
+	width:170px;
+	height:165px;
+	position:absolute;
+	background: #fff;
+	opacity: .9;
+	left:50%;
+	/*top:50%;*/
+	top:160%;
+	z-index:10;
+	margin-top:-83px;
+	margin-left:-85px;
+	/*transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);	*/
+	-moz-transition:all .5s ease;
+	-webkit-transition:all.5s ease;
+	-o-transition:all .5s ease;
+	-ms-transition:all .5s ease;		
+}
+.i-img{
+	position:absolute;
+	top:50%;
+	width:147px;
+	height:165px;
+	background:url(../images/tip.png) no-repeat;
+	top:7px;
+	right:10px;
+	display: none;
+}
+.login-ok{
+	position: relative;
+	margin-top: -110px;
+	z-index: 11;
+	text-align: center;
+}
+.icon{
+	width:25px;
+	height:25px;
+	margin:0 auto 7px;	
+}
+.icon.ok{
+		background: url(../images/loginok.png) center center no-repeat;
+}
+.icon.error{
+	background: url(../images/shuaxin.png) center center no-repeat;
+	cursor: pointer;
+}
+.login-ok>span{
+	display: block;
+	margin-bottom: 5px;
+	font-size:14px;
+	font-weight: bold;
+	color:#000;
+	line-height: 16px;
+}
+.login-ok>span.btn{
+	margin: auto;
+    padding: 10px 5px;
+    width: 100px;
+    background: #16B95F;
+	color: #fff;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.login-cover .tips{
+	text-align: center;
+	line-height: 16px;
+	font-size:14px;
+    color:#515151;
+    background: none;
+	position: relative;
+	margin-bottom: 10px;
+}
+.login-cover .tips.download{
+	color: #a8a8a8;
+}
+.login-cover .tips>a{
+	color:#16B95F;
+}
+.advant-age {
+	text-align: center;
+	margin-top:24px;
+	height:43px;
+}
+.advant-age>span{
+	display: inline-block;
+	font-size:14px;
+	color:#AAA3A1;
+	margin:0 9px;
+	vertical-align: middle;
+}
+.advant-age>i{
+	display: inline-block;
+	vertical-align: middle;
+	width:25px;
+	height:25px;
+}
+.no-input{
+	background:url(../images/sprite.png) 0 0 no-repeat;
+}
+.fast-more{
+	background:url(../images/sprite.png) -27px 0 no-repeat;
+}
+.fast-safe{
+	background:url(../images/sprite.png) -54px 0 no-repeat;
+}
+
+/*底部样式*/
+.login-footer{
+	position:absolute;
+	width:100%;
+	height:64px;
+	background:#FCFCFC;
+	border-top:1px solid #EFEFEF;
+	left:0;
+	bottom:0
+}
+.login-status{
+	margin-top:19px;
+	padding:0 12px;
+}
+.soft-ware{
+	font-size:12px;
+	display: inline-block;
+	line-height: 16px;
+	color:#515151;
+	font-weight: normal;
+	vertical-align: middle;
+}
+.soft-ware.now{
+	font-size:14px;
+	color:#16B95F;
+	font-weight:bold;
+	line-height:19px;
+}
+.pull-right{
+	float:right
+}
+/*特殊字体*/
+.soft-ware.style{
+	font-family: Arial,Verdana,"\5b8b\4f53";
+}
+.soft-icon{
+	width:18px;
+	height:18px;
+	display: inline-block;
+	vertical-align: middle;
+	margin:0 6px;
+	transform:rotate(0deg);
+	-ms-transform:rotate(0deg);
+	-moz-transform:rotate(0deg);
+	-webkit-transform:rotate(0deg);
+	-o-transform:rotate(0deg);
+	transition:all .5s ease;
+	-moz-transition:all .5s ease;
+	-webkit-transition:all.5s ease;
+	-o-transition:all .5s ease;
+	-ms-transition:all .5s ease;		
+}
+.icon-qq{
+	background: url(../images/qq.png);
+}
+.qq-item:hover .icon-qq{
+	transform:rotate(360deg);
+	-ms-transform:rotate(360deg);
+	-moz-transform:rotate(360deg);
+	-webkit-transform:rotate(360deg);
+	-o-transform:rotate(360deg);	
+}
+.icon-weibo{
+	background: url(../images/weibo.png);
+}
+.weibo-item:hover .icon-weibo{
+	transform:rotate(360deg);
+	-ms-transform:rotate(360deg);
+	-moz-transform:rotate(360deg);
+	-webkit-transform:rotate(360deg);
+	-o-transform:rotate(360deg);	
+}
+.icon-go{
+	background: url(../images/go.png);
+}
+
+.item-div{
+	display: none;
+	position:relative;
+}
+.item-div.actived{
+	display: block;
+}
+
+/*表单样式*/
+.form-wrap{
+	padding:42px 24px 0 30px;
+	position:relative;
+}
+.login-error{
+	width:100%;
+	position:absolute;
+	padding:10px 24px 0 30px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;	
+	left:0;
+	top:0;
+	z-index:10;
+}
+.error-span{
+	display: block;
+	padding-left:27px;
+	height:22px;
+	line-height:22px;
+	background: url(../images/onerror.gif) left center no-repeat;
+	font-size:13px;
+	color:red;
+	display: none;
+}
+.input-item{
+	position:relative;
+	margin-bottom:22px;
+}
+input[type="text"].o-input,input[type="password"].o-input{
+	display: block;
+	height:41px;
+	line-height: normal;
+	background:#FFFFFF !important;
+	border:1px solid #DFDFDF;
+	outline: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	padding-left:41px;
+	width:100%;
+	font-size:14px;
+	border-radius: 5px;
+	-ms-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+.input-icon{
+	width:41px;
+	height:41px;
+	position:absolute;
+	left:0;
+	top:0;
+}
+input[type=text].o-input:focus,input[type=password].o-input:focus{
+	border-color:#16B95F;
+	box-shadow:1px 1px 2px 2px #C0ECD4,-1px -1px 2px 2px #C0ECD4 ;
+	-webkit-box-shadow:1px 1px 2px 2px #C0ECD4,-1px -1px 2px 2px #C0ECD4 ;
+	-ms-box-shadow:1px 1px 2px 2px #C0ECD4,-1px -1px 2px 2px #C0ECD4 ;
+	-o-box-shadow:1px 1px 2px 2px #C0ECD4,-1px -1px 2px 2px #C0ECD4 ;
+	-moz-box-shadow:1px 1px 2px 2px #C0ECD4,-1px -1px 2px 2px #C0ECD4 ;
+}
+.user{
+	background: url(../images/usericon.png) center center no-repeat;
+}
+.pass{
+	background: url(../images/passicon.png) center center no-repeat;
+}
+.forget-pass{
+	font-size:12px;
+	color:#515151;
+	line-height: 16px;
+}
+.bottom-tip{
+	position:relative;
+	top:-7px;
+}
+.forget-pass:hover,.soft-ware:hover,.link-weixin:hover{
+	text-decoration: underline;
+	color:#16B95F;
+}
+.login-cover .login-btn{
+	width:100%;
+	height:41px;
+	line-height: 41px;
+	text-align: center;
+	font-size:16px;
+	color:#FFFFFF;
+	font-weight: bold;
+	background:#16B95F;
+	outline: none;
+	border:none;
+	border-radius: 3px;
+	-ms-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	-webkit-border-radius: 3px;	
+	cursor: pointer;
+	letter-spacing: 10px;
+    margin-top:23px;
+    padding: 0;
+}
+
+.error-tip{
+	position: absolute;
+	font-size:12px;
+	color:red;
+	left:0;
+	bottom:-5px;
+	bottom:-18px;
+	display: none;
+}

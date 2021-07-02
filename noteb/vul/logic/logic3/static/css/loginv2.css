@@ -1,0 +1,800 @@
+﻿.login-cover {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url('../images/gb.png') repeat;
+  z-index: 9999;
+  display: block;
+  left: 0;
+  top: 0;
+  /*底部样式*/
+}
+.login-cover * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "PingFangSC-Regular", "Microsoft YaHei", "sans-serif";
+  text-decoration: none;
+}
+.login-cover a:link {
+  text-decoration: none;
+}
+.login-cover .clearfix:after {
+  content: "";
+  height: 0;
+  display: block;
+  clear: both;
+}
+.login-cover .clearfix {
+  zoom: 1;
+}
+.login-cover .fl {
+  float: left;
+}
+.login-cover .fr {
+  float: right;
+}
+.login-cover .login-footer {
+  position: absolute;
+  width: 100%;
+  height: 64px;
+  left: 0;
+  bottom: 0;
+}
+.login-cover .login-footer .link {
+  width: 49.8%;
+  display: block;
+  line-height: 64px;
+  text-align: center;
+}
+.login-cover .login-footer .link .soft-ware {
+  font-size: 16px;
+  color: #F96203;
+}
+.login-cover .login-footer .link:hover {
+  text-decoration: none;
+}
+.login-cover .login-footer .line {
+  float: left;
+  width: 1px;
+  height: 20px;
+  background: #F96203;
+  line-height: 64px;
+  margin: 22px 0;
+}
+.login-cover .bind-phone-text {
+  display: none;
+  margin: 25px 0 0 0;
+  padding: 0 34px;
+  font-size: 14px;
+}
+.login-cover .change-login-type {
+  font-size: 14px;
+  color: #ccc;
+  margin: 20px 0 0 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+}
+.login-cover .login-wrap-out {
+  width: 300px;
+  height: 380px;
+  background: #FFFFFF;
+  position: absolute;
+  z-index: 10000;
+  left: 50%;
+  top: 50%;
+  margin-top: -190px;
+  margin-left: -150px;
+}
+.login-cover .login-wrap-out .other-login-title {
+  font-size: 14px;
+  color: #ccc;
+  float: left;
+  margin: 20px 0 0 30px;
+}
+.login-cover .login-wrap-out .normal-login {
+  float: left;
+  margin: 20px 0 0 0;
+  font-size: 18px;
+  width: 50%;
+  color: #999;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+}
+.login-cover .login-wrap-out .normal-login.curr {
+  font-weight: bold;
+}
+.login-cover .login-wrap-out .normal-login.curr .text {
+  display: inline-block;
+}
+.login-cover .login-wrap-out .login-head {
+  width: 90%;
+  margin: 22px auto 22px;
+  text-align: center;
+  color: #F96203;
+}
+.login-cover .login-wrap-out .login-head .scan-title {
+  height: 40px;
+}
+.login-cover .login-wrap-out .login-head .bind-phone {
+  color: #333;
+  display: none;
+}
+.login-cover .login-wrap {
+  /*tab样式*/
+  /*特殊字体*/
+  /*表单样式*/
+}
+.login-cover .login-wrap .close-btn {
+  z-index: 3;
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -moz-border-radius: 50%;
+  right: 0;
+  top: -18px;
+  right: -18px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.17);
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.17);
+  -ms-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.17);
+  -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.17);
+  -o-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.17);
+  background: #FFFFFF url('../images/close.png') center center no-repeat;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+}
+.login-cover .login-wrap .close-btn:hover {
+  transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
+.login-cover .login-wrap .main {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+.login-cover .login-wrap .login-tab {
+  padding: 33px 0 24px 0;
+  border-bottom: 1px solid #EFEFEF;
+  position: relative;
+  margin-bottom: 26px;
+}
+.login-cover .login-wrap .login-tab:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 34px;
+  margin-left: -1px;
+  width: 2px;
+  height: 18px;
+  background: #EFEFEF;
+}
+.login-cover .login-wrap .scan-text {
+  text-align: center;
+  font-size: 12px;
+}
+.login-cover .login-wrap .scan-text .scan-app {
+  margin: 0 5px;
+  color: #F96203;
+  opacity: 0.8;
+}
+.login-cover .login-wrap .tab-item {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+.login-cover .login-wrap .tab-item > a {
+  color: #5D5D61;
+  font-weight: bold;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 21px;
+}
+.login-cover .login-wrap .tab-item.actived > a {
+  color: #16B95F;
+}
+.login-cover .login-wrap .codeWrap {
+  width: 196px;
+  height: 179px;
+  margin: 0 auto;
+  padding: 7px 13px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  margin-bottom: 23px;
+}
+.login-cover .login-wrap .img-wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  left: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  border: 1px solid #dddddd;
+}
+.login-cover .login-wrap .img-wrap > iframe {
+  width: 170px;
+}
+.login-cover .login-wrap .img-wrap > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-color: transparent;
+  background: url(../images/loading.gif) center center no-repeat;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+.login-cover .login-wrap .img-cover {
+  width: 170px;
+  height: 165px;
+  position: absolute;
+  background: #fff;
+  opacity: 0.9;
+  left: 50%;
+  /*top:50%;*/
+  top: 160%;
+  z-index: 10;
+  margin-top: -83px;
+  margin-left: -85px;
+  /*transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        -moz-transform: translate(-50%,-50%);
+        -o-transform: translate(-50%,-50%);	*/
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+}
+.login-cover .login-wrap .i-img {
+  position: absolute;
+  top: 50%;
+  width: 147px;
+  height: 165px;
+  background: url(../images/tip.png) no-repeat;
+  top: 7px;
+  right: 10px;
+  display: none;
+}
+.login-cover .login-wrap .login-ok {
+  position: relative;
+  margin-top: -130px;
+  z-index: 11;
+  text-align: center;
+}
+.login-cover .login-wrap .icon {
+  width: 25px;
+  height: 25px;
+  margin: 0 auto 7px;
+}
+.login-cover .login-wrap .icon.ok {
+  background: url('../images/loginok.png') center center no-repeat;
+}
+.login-cover .login-wrap .icon.error {
+  cursor: pointer;
+  background: url('../images/shuaxin.png') center center no-repeat;
+}
+.login-cover .login-wrap .login-ok > span {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+  line-height: 16px;
+}
+.login-cover .login-wrap .login-ok > span.btn {
+  margin: 30px auto;
+  padding: 10px 5px;
+  width: 100px;
+  background: #FF6E00;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.login-cover .login-wrap .tips {
+  text-align: center;
+  line-height: 16px;
+  font-size: 14px;
+  color: #515151;
+  background: none;
+  position: relative;
+  margin-bottom: 10px;
+}
+.login-cover .login-wrap .tips.download {
+  color: #a8a8a8;
+}
+.login-cover .login-wrap .tips > a {
+  color: #16B95F;
+}
+.login-cover .login-wrap .advant-age {
+  text-align: center;
+  margin-top: 24px;
+  height: 43px;
+}
+.login-cover .login-wrap .advant-age > span {
+  display: inline-block;
+  font-size: 14px;
+  color: #AAA3A1;
+  margin: 0 9px;
+  vertical-align: middle;
+}
+.login-cover .login-wrap .advant-age > i {
+  display: inline-block;
+  vertical-align: middle;
+  width: 25px;
+  height: 25px;
+}
+.login-cover .login-wrap .no-input {
+  background: url(../images/sprite.png) 0 0 no-repeat;
+}
+.login-cover .login-wrap .fast-more {
+  background: url(../images/sprite.png) -27px 0 no-repeat;
+}
+.login-cover .login-wrap .fast-safe {
+  background: url(../images/sprite.png) -54px 0 no-repeat;
+}
+.login-cover .login-wrap .login-status {
+  margin-top: 19px;
+  padding: 0 12px;
+}
+.login-cover .login-wrap .soft-ware {
+  font-size: 12px;
+  display: inline-block;
+  line-height: 16px;
+  color: #515151;
+  font-weight: normal;
+  vertical-align: middle;
+}
+.login-cover .login-wrap .soft-ware.now {
+  font-size: 14px;
+  color: #16B95F;
+  font-weight: bold;
+  line-height: 19px;
+}
+.login-cover .login-wrap .pull-right {
+  float: right;
+}
+.login-cover .login-wrap .soft-ware.style {
+  font-family: Arial, Verdana, "\5b8b\4f53";
+}
+.login-cover .login-wrap .soft-icon {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 6px;
+  transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+}
+.login-cover .login-wrap .icon-qq {
+  background: url(../images/qq.png);
+}
+.login-cover .login-wrap .qq-item:hover .icon-qq {
+  transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
+.login-cover .login-wrap .icon-weibo {
+  background: url(../images/weibo.png);
+}
+.login-cover .login-wrap .weibo-item:hover .icon-weibo {
+  transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
+.login-cover .login-wrap .icon-go {
+  background: url(../images/go.png);
+}
+.login-cover .login-wrap .item-div {
+  display: none;
+  position: relative;
+}
+.login-cover .login-wrap .item-div.actived {
+  display: block;
+}
+.login-cover .login-wrap .form-wrap {
+  padding: 0 24px 0 30px;
+  position: relative;
+}
+.login-cover .login-wrap .login-error {
+  padding: 10px 0 0 0;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+.login-cover .login-wrap .error-span {
+  display: block;
+  padding-left: 27px;
+  height: 22px;
+  line-height: 22px;
+  background: url('../images/onerror.gif') left center no-repeat;
+  font-size: 13px;
+  color: red;
+  display: none;
+}
+.login-cover .login-wrap .input-item {
+  position: relative;
+  margin-bottom: 22px;
+}
+.login-cover .login-wrap input[type="text"].o-input,
+.login-cover .login-wrap input[type="password"].o-input {
+  display: block;
+  height: 41px;
+  line-height: normal;
+  background: #FFFFFF !important;
+  border: none;
+  border-bottom: 1px solid #DFDFDF;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  width: 100%;
+  font-size: 14px;
+  padding-left: 10px;
+}
+.login-cover .login-wrap .input-icon {
+  width: 41px;
+  height: 41px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.login-cover .login-wrap input[type=text].o-input:focus,
+.login-cover .login-wrap input[type=password].o-input:focus {
+  border-color: #16B95F;
+  box-shadow: 1px 1px 2px 2px #C0ECD4, -1px -1px 2px 2px #C0ECD4;
+  -webkit-box-shadow: 1px 1px 2px 2px #C0ECD4, -1px -1px 2px 2px #C0ECD4;
+  -ms-box-shadow: 1px 1px 2px 2px #C0ECD4, -1px -1px 2px 2px #C0ECD4;
+  -o-box-shadow: 1px 1px 2px 2px #C0ECD4, -1px -1px 2px 2px #C0ECD4;
+  -moz-box-shadow: 1px 1px 2px 2px #C0ECD4, -1px -1px 2px 2px #C0ECD4;
+}
+.login-cover .login-wrap .user {
+  background: url('../images/usericon.png') center center no-repeat;
+}
+.login-cover .login-wrap .pass {
+  background: url('../images/passicon.png') center center no-repeat;
+}
+.login-cover .login-wrap .forget-pass {
+  font-size: 12px;
+  color: #FF615B;
+  line-height: 16px;
+}
+.login-cover .login-wrap .bottom-tip {
+  position: relative;
+  top: -3px;
+  margin: 0 0 0 12px;
+}
+.login-cover .login-wrap .forget-pass:hover,
+.login-cover .login-wrap .soft-ware:hover,
+.login-cover .login-wrap .link-weixin:hover {
+  text-decoration: underline;
+}
+.login-cover .login-wrap .login-btn {
+  width: 100%;
+  height: 41px;
+  line-height: 41px;
+  text-align: center;
+  font-size: 16px;
+  color: #FFFFFF;
+  font-weight: bold;
+  background: #FF6E00;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  -ms-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  cursor: pointer;
+  letter-spacing: 10px;
+  padding: 0;
+}
+.login-cover .login-wrap .error-tip {
+  position: absolute;
+  font-size: 12px;
+  left: 11px;
+  color: red;
+  display: none;
+  height: 30px;
+  line-height: 30px;
+}
+.login-cover .orderDiv {
+  background: #fff;
+  padding: 0 34px 0 34px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  display: block;
+  z-index: 3;
+  /*ç‰¹æ®Šå­—ä½“*/
+  /*按钮样式*/
+}
+.login-cover .orderDiv .orderForm {
+  margin-top: 31px;
+}
+.login-cover .orderDiv .formItem {
+  position: relative;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #E5E5E5;
+}
+.login-cover .orderDiv .formItem > .icon,
+.login-cover .orderDiv .formItem > .errorIcon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 0;
+  top: 50%;
+  margin-top: -15px;
+  background: url('../images/phone.png') center center no-repeat;
+}
+.login-cover .orderDiv .getCode > .code {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.login-cover .orderDiv .getCode + .icon {
+  background: url('../images/code.png') center center no-repeat;
+}
+.login-cover .orderDiv .formInput + .errorIcon {
+  left: auto;
+  right: 0;
+  background: url('../images/warn.png') center center no-repeat;
+  display: none;
+}
+.login-cover .orderDiv input[type="text"].formInput,
+.login-cover .orderDiv input[type="tel"].formInput {
+  border: 0;
+  background: none;
+  width: 100%;
+  height: 40px;
+  line-height: normal;
+  color: #333;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  padding: 0;
+  padding-left: 10px;
+}
+.login-cover .orderDiv input[type="text"].formInput.small,
+.login-cover .orderDiv input[type="tel"].formInput.small {
+  width: 55%;
+  display: block;
+}
+.login-cover .orderDiv .getCode {
+  width: 98px;
+  height: 30px;
+  float: right;
+  background: #F96203;
+  font-size: 13px;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  border-radius: 3px;
+  margin: 5px 0;
+}
+.login-cover .orderDiv .getCode.actived {
+  color: #F96203;
+  border: 1px solid #F96203;
+  background: #fff;
+}
+.login-cover .orderDiv .seconed {
+  display: none;
+  background: #d7d7d7;
+  cursor: default;
+}
+.login-cover .orderDiv .btnWrap {
+  text-align: center;
+}
+.login-cover .orderDiv .btnWrap-next {
+  font-size: 14px;
+  margin: 20px 0;
+  text-align: center;
+  cursor: pointer;
+}
+.login-cover .orderDiv .orderBtn,
+.login-cover .orderDiv .orderOther {
+  border: 0;
+  outline: none;
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  letter-spacing: 5px;
+  font-size: 14px;
+  background: #F96203;
+  padding: 0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.login-cover .orderDiv .orderError {
+  font-size: 12px;
+  color: #FF615B;
+  position: absolute;
+  left: 11px;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+}
+.login-cover .orderDiv .orderBtn.loading {
+  background: #F96203;
+}
+.login-cover .orderDiv .orderBtn:active {
+  background: #F96203;
+}
+.login-cover .orderDiv .errorItem > input[type="text"].formInput,
+.login-cover .orderDiv .errorItem > input[type="tel"].formInput {
+  border-color: #FF615B;
+}
+.login-cover .orderDiv .successItem > input[type="text"].formInput,
+.login-cover .orderDiv .successItem > input[type="tel"].formInput {
+  border-color: #F96203;
+}
+.login-cover .orderDiv .errorItem > .errorIcon {
+  display: block;
+}
+.login-cover .orderDiv .errorItem > .orderError {
+  display: block;
+}
+.login-cover .orderDiv .paramsError {
+  background: #ffecec url('../images/onerror.gif') no-repeat 3px scroll;
+  border: solid 1px #ffc7c7;
+  padding: 5px 0 5px 25px;
+  width: 290px;
+  font-size: 12px;
+  color: #f00;
+  position: absolute;
+  left: 34px;
+  top: 30px;
+  display: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+@media screen and (max-width: 370px) {
+  .login-cover .orderDiv .orderDiv.ab {
+    width: 300px;
+  }
+  .login-cover .orderDiv .paramsError {
+    width: 232px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .login-cover .orderDiv .orderDiv.ab {
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    margin-left: 0 ;
+  }
+}
+.login-cover .orderDiv .login-status.orderP {
+  padding: 0 34px;
+}
+.login-cover .orderDiv .soft-icon.icon-go {
+  margin-right: 0;
+}
+.login-cover .orderDiv #orderOther {
+  color: #F96203;
+  position: relative;
+  top: 2px;
+  display: inline-block;
+}
+.login-cover .orderDiv #orderOther:hover {
+  text-decoration: underline;
+  color: #F96203;
+}
+.login-cover .orderDiv .login-status {
+  margin-top: 19px;
+  padding: 0 12px;
+}
+.login-cover .orderDiv .soft-ware {
+  font-size: 12px;
+  display: inline-block;
+  line-height: 16px;
+  color: #515151;
+  font-weight: normal;
+  vertical-align: middle;
+}
+.login-cover .orderDiv .soft-ware.now {
+  font-size: 14px;
+  color: #F96203;
+  font-weight: bold;
+  line-height: 19px;
+}
+.login-cover .orderDiv .pull-right {
+  float: right;
+}
+.login-cover .orderDiv .soft-ware.style {
+  font-family: Arial, Verdana, "\5b8b\4f53";
+}
+.login-cover .orderDiv .soft-icon {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 6px;
+}
+.login-cover .orderDiv .icon-go {
+  background: url('../images/go.png');
+}
+.login-cover .orderDiv .order-p {
+  height: 50px;
+  line-height: 50px;
+  color: #F96203;
+  font-size: 16px;
+  cursor: pointer;
+}
+.login-cover .orderDiv .ab {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -179px;
+  margin-top: -165px;
+  display: block;
+  z-index: 1000;
+}
+.login-cover .orderDiv .close {
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: url('../images/close.png') center center no-repeat;
+}

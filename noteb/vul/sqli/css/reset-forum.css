@@ -1,0 +1,168 @@
+/*
+* @Author: liujia
+* @Date:   2018-06-20 17:37:30
+* @Last Modified by:   liujia
+* @Last Modified time: 2018-06-21 16:16:46
+*/
+html,body{
+    font-family: Arial, "Microsoft Yahei", "Helvetica Neue", Helvetica;
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,input,textarea,p,th,td,hr,figure {
+    margin:0;
+    padding:0;
+    resize: none;
+}
+body{
+    min-height: 900px;
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+img{
+    border: 0;
+}
+em,strong,i{
+    font-weight: normal;
+    font-style: normal;
+}
+ol,ul{
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size: 100%;
+    font-weight: normal;
+}
+input,textarea,select,button {
+    font-family:inherit;
+    font-size:inherit;
+    font-weight:inherit;
+    *font-size:100%;
+    outline:none;
+    border:none;
+    background:none;
+    padding: 0;
+}
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+}
+input[type="number"]{-moz-appearance:textfield;}
+hr{
+    width: 100%;
+    height: 1px;
+    background-color: #f1f1f1;
+    border: none;
+}
+a{
+    color:inherit;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+a:focus{
+    outline: none;
+    color: inherit;
+    text-decoration: none;
+}
+.mr0{
+    margin-right: 0;
+}
+.clearfix:after{
+    content: ".";
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    display: block;
+    visibility: hidden;
+}
+.clearfix {
+    zoom: 1;
+}
+.a-link{
+    color: #17acf6;
+}
+.a-link:focus{
+    color: #17acf6;
+}
+a:hover{
+    color: #17acf6;
+    text-decoration: none;
+}
+.nav>li>a:focus, .nav>li>a:hover{
+    background: none;
+}
+.navbar{
+    margin-bottom: 8px;
+}
+.form-control:focus{
+    border-color: #17acf6!important;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+html, body {
+    -ms-overflow-style: scrollbar;
+}
+body{
+    background: url('../img/bg9.jpg') no-repeat 50% 0;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1054px;
+    }
+}
+/* 字体图标 */
+@font-face {
+    font-family: 'iconfont';  /* project id 830750 */
+    src: url('../img/font_830750_g0hgejwzp6s.eot');
+    src: url('../img/font_830750_g0hgejwzp6s.eot?#iefix') format('embedded-opentype'),
+    url('../img/font_830750_g0hgejwzp6s.woff2') format('woff2'),
+    url('../img/font_830750_g0hgejwzp6s.woff') format('woff'),
+    url('../img/font_830750_g0hgejwzp6s.ttf') format('truetype'),
+    url('../img/font_830750_g0hgejwzp6s.svg#iconfont') format('svg');
+}
+
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;
+    font-style:normal;
+    text-decoration: none  !important;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#info-header .infoH-opt .opt-box{
+    display: inline-block;
+    margin: 0 auto;
+}
+
+#info-header .infoH-opt .opt-box .opt-list{
+    float: left;
+    padding: 0 10px;
+    min-width: 78px;
+    height: 26px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    background: #17acf6;
+    margin: 0 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid #17acf6;
+}
+/*主题屏蔽*/
+.shield-theme{
+    font-size: 16px;
+    color: #666666;
+    border: 1px dashed #ffa405;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+.shield-theme .iconfont{
+    color: #ffa405;
+    font-size: 28px;
+    vertical-align: sub;
+    margin-right: 15px;
+}
+/*主题屏蔽结束*/

@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title>访问的内容已删除内容删除</title>
+    <link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/reset-forum.css?v=01081850">
+    <link rel="stylesheet" href="/css/error404.css?v=03141708">
+    <!--[if lt IE 9]>
+    <script src="/lib/html5shiv/html5shiv.min.js"></script>
+    <script src="/lib/respond/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div id="delete-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="delete-page-wrap clearfix">
+                    <div class="delete-page-img">
+                        <img src="/images/404.jpg" alt="">
+                    </div>
+                    <div class="delete-page-words">
+                        <p>抱歉，页面找不到了...</p>
+                        <p><span class="second" id="second">3</span>秒后带您跳转到网站首页</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/lib/jquery/jquery-1.12.3.min.js"></script>
+<script src="/lib/jquery-migrate/jquery-migrate-1.2.1.min.js"></script>
+<script src="/lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="/dist/js/error404.js?v=03141708"></script>
+</body>
+</html>
